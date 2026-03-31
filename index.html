@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agencia de viaje donde los adultos viajan gratis y los niños pagan">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+    <title>Viajes Delmiro</title>
+</head>
+
+<body>
+    <header>
+        <h1>VIAJES DELMIRO</h1>
+        <p>Adults <span>FREE</span></p>
+        <nav>
+            <ul>
+                <li><a href="#portada">INICIO</a></li>
+                <li><a href="#destinos">DESTINOS</a></li>
+                <li><a href="#informacion">INFORMACION</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portada" id="portada">
+            <h2>Cambia pañales por billetes</h2>
+            <p>Viajes Delmiro ofrece lo nunca antes visto: adultos gratis, niños pagando</p>
+            <p>Años de pañales, noches sin dormir... ahora nosotros equilibramos las cuentas</p>
+            <div class="oferta">
+                <p class="o_titulo">OFERTA ESPECIAL</p>
+                <p class="o_destino">LAPONIA: adultos 0€ + niños desde <strong>699€</strong></p>
+                <p class="o_texto">¡Este año, arruínales tú las navidades!</p>
+                <a href="#contacto">RESERVA YA</a>
+            </div>
+
+
+        </section>
+        <section class="destinos" id="destinos">
+            <h2>DESTINOS</h2>
+            <div class="tarjetas">
+                <article>
+                    <img src="./assets/Paris.webp" alt="">
+                    <h3>Disneyland...PARIS</h3>
+                    <p>La magia de París sin orejas de Mickey Mouse. Cultura para todos, con visitas intensivas a museos
+                        y
+                        cafés.</p>
+                    <p class="precio">ADULTOS: <span>GRATIS</span> - NIÑOS: desde <strong>499€</strong></p>
+                    <a href="#contacto">Reservar</a>
+                </article>
+                <article>
+                    <img src="./assets/Ibiza.webp" alt="">
+                    <h3>IBIZA</h3>
+                    <p>Spa, siestas y cenas sin show. Aprenderán que no todo en la vida son los parques de bolas.</p>
+                    <p class="precio">ADULTOS: <span>GRATIS</span> - NIÑOS: desde <strong>299€</strong></p>
+                    <a href="#contacto">Reservar</a>
+                </article>
+                <article>
+                    <img src="./assets/Roma.webp" alt="">
+                    <h3>ROMA</h3>
+                    <p>Ruinas, iglesias y 20.000 pasos al día. Un viaje educativo, muy aburrido y que no olvidarán.</p>
+                    <p class="precio">ADULTOS: <span>GRATIS</span> - NIÑOS: desde <strong>399€</strong></p>
+                    <a href="#contacto">Reservar</a>
+                </article>
+            </div>
+        </section>
+        <section class="informacion" id="informacion">
+            <h2>¿Qué necesitas?</h2>
+            <p>Simple, como los problemas de los cuadernillos de matemáticas</p>
+            <ul>
+                <li>Ser padre, madre o tutor oficialmente cansado</li>
+                <li>Niños dados de alta como autónomo</li>
+                <li>Ganas de veng...descansar</li>
+                <li>Baja tolerancia a las rabietas</li>
+                <li>Saber decir "porque lo digo yo" sin remordimientos</li>
+            </ul>
+        </section>
+        <section class="contacto" id="contacto">
+            <h2>CONTACTO</h2>
+            <form action="#">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="example@example.com" required>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje"
+                    placeholder="Indica el destino, cantidad de adultos, cantidad de niños y fechas"></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Viajes Delmiro. Todos los derechos reservados</p>
+        <p class="lema">Cambia pañales por billetes.</p>
+    </footer>
+
+</body>
+
+</html>

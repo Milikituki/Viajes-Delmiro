@@ -1,0 +1,364 @@
+:root {
+    --primaryColor: #25DB8F;
+    --darkPrimaryColor: #178C5B;
+    --actionColor: #DB8F25;
+    --pointColor: ##1DB475;
+    --smoothColor: #C2F5E0;
+    --HardColor: #04160E;
+    --radius: 10px;
+    --shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --hoverShadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--HardColor);
+    background-color: var(--primaryColor);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--darkPrimaryColor);
+    color: var(--HardColor);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: var(--actionColor);
+    letter-spacing: 0.5px;
+}
+
+header p span {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+header p {
+    font-size: 0.85rem;
+    color: var(--smoothColor);
+    font-style: italic;
+    margin-top: 0.15rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--HardColor);
+    padding: 0.45rem 0.9rem;
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+nav li a:hover {
+    background-color: var(--actionColor);
+    color: var(--smoothColor);
+}
+
+.portada {
+    background: linear-gradient(135deg, var(--primaryColor) 0%, #9AEFCB 60%, #4BE2A3 100%);
+    color: var(--HardColor);
+    padding: 5rem 2rem;
+    text-align: center;
+
+}
+
+.portada h2 {
+    font-size: 2.4rem;
+    line-height: 1.25;
+    margin-bottom: 1.2rem;
+    color: var(--actionColor);
+}
+
+.portada p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #1f1f1f;
+}
+
+.portada .oferta {
+    display: inline-block;
+    background-color: rgba(67, 67, 67, 0.155);
+    border: 2px solid #e88b09a3;
+    border-radius: var(--radius);
+    padding: 1rem 8rem;
+    margin-top: 1rem;
+}
+
+.portada .o_titulo {
+    background-color: var(--actionColor);
+    border-radius: var(--radius);
+    color: var(--smoothColor);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.2rem 0.7rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.portada .o_texto {
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--smoothColor);
+}
+
+.portada a {
+    display: inline-block;
+    padding: 0.75rem 1.8rem;
+    background-color: var(--actionColor);
+    color: var(--smoothColor);
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.25s, transform 0.2s, box-shadow 0.25s;
+}
+
+.portada a:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    background-color: #dc850d;
+}
+
+.destinos h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--pointColor);
+    margin-bottom: 2.5rem;
+}
+
+.destinos {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+article {
+    background-color: var(--smoothColor);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hoverShadow);
+}
+
+article h3 {
+    color: var(--pointColor);
+    text-align: center;
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+}
+
+article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 2.5rem;
+}
+
+article p {
+    padding: 1.2rem;
+}
+
+article .precio {
+    font-size: 0.95rem;
+}
+
+article span {
+    color: var(--primaryColor);
+    font-weight: 700;
+}
+
+article a {
+    background-color: var(--actionColor);
+    color: var(--smoothColor);
+    text-decoration: none;
+    padding: 0.55rem 1.2rem;
+    font-size: 0.9;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.25s;
+    margin-top: auto;
+}
+
+article a:hover {
+    background-color: #dc850d;
+}
+
+.informacion {
+    background-color: var(--darkPrimaryColor);
+    max-width: 680px;
+    margin: 0 auto;
+    border-radius: var(--radius);
+    padding: 1.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informacion h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--pointColor);
+    margin-bottom: 2.5rem;
+}
+
+.informacion p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.informacion ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.informacion ul li {
+    font-size: 0.9rem;
+    color: var(--smoothColor);
+    padding-left: 1.2rem;
+}
+
+.contacto {
+    padding: 4rem 2rem;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.contacto h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--pointColor);
+    margin-bottom: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+form label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--pointColor);
+}
+
+form input {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--darkPrimaryColor);
+    border-radius: var(--radius);
+    font-size: 0.888rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--HardColor);
+    background-color: #ffff;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--actionColor);
+    box-shadow: var(--hoverShadow);
+}
+
+form textarea {
+    resize: vertical;
+    font-size: 0.8rem;
+    outline: none;
+    border: 2px solid var(--darkPrimaryColor);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.5rem 0.5rem;
+
+}
+
+form button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: var(--actionColor);
+    border-radius: 15px;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    color: #ffff;
+    font-weight: 600;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+form button:hover {
+    box-shadow: var(--hoverShadow);
+    transform: translateY(-1.5px);
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--darkPrimaryColor);
+    color: var(--smoothColor);
+    padding: 2rem;
+    text-align: center;
+}
+
+.lema{
+    font-size: 0.88;
+    font-style: italic;
+    color: #9AEFCB;
+}
+
+@media (max-width: 900px){
+    .tarjetas{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width: 600px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .tarjetas{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
